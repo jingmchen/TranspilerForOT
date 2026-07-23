@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TranspilerForOT.Engine</RootNamespace>
+    <AssemblyName>TranspilerForOT.Engine</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TranspilerForOT.Core\TranspilerForOT.Core.csproj" />
+  </ItemGroup>
+  
+</Project>

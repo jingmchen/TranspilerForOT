@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TranspilerForOT.AppHost/TranspilerForOT.AppHost.csproj" />
+    <Project Path="src/TranspilerForOT.Core/TranspilerForOT.Core.csproj" />
+    <Project Path="src/TranspilerForOT.Engine/TranspilerForOT.Engine.csproj" />
+    <Project Path="src/TranspilerForOT.Infrastructure/TranspilerForOT.Infrastructure.csproj" />
+    <Project Path="src/TranspilerForOT.UI/TranspilerForOT.UI.csproj" />
+  </Folder>
+</Solution>
