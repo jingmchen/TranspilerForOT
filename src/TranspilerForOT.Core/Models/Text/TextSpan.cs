@@ -2,7 +2,7 @@
 
 namespace TranspilerForOT.Core.Models.Text;
 
-public readonly record struct TextSpan : IEquatable<TextSpan>
+public readonly record struct TextSpan
 {
     public int Start {get;}
     public int Length {get;}
@@ -16,10 +16,4 @@ public readonly record struct TextSpan : IEquatable<TextSpan>
 
     public static TextSpan FromBounds(int start, int end)
         => new(start, end - start);
-    
-    public bool Equals(TextSpan other)
-        => other.Start == Start && other.Length == Length;
-
-    public override int GetHashCode()
-        => HashCode.Combine(Start, Length);
 }

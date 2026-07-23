@@ -4,22 +4,23 @@ namespace TranspilerForOT.Core.Models.Text;
 
 public sealed class SourceText
 {
-    public string FileName {get;}
     private readonly string _text;
     private readonly int[] _lineStarts; // represents an array of line starts; the position right after each new line '\n'
     public int Length => _text.Length;
 
     public char this[int index] => _text[index]; // Allows return of char quickly eg cls[index]
 
-    private SourceText(string text, string fileName)
+    private SourceText(string text)
     {
         _text = text;
-        FileName = fileName;
         _lineStarts = ComputeLineStarts(text);
     }
 
     public static SourceText From(string text, string fileName = "<memory>")
-        => new(text ?? "", fileName);
+        => new(text ?? "");
+    
+    public string ToString(TextSpan span)
+        => _text.Substring(span.Start, span.Length);
     
     public LinePosition GetLinePosition(int position)
     {
