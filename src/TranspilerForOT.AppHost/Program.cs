@@ -95,7 +95,7 @@ internal sealed class Program
             .MinimumLevel.Override("System", Serilog.Events.LogEventLevel.Warning)
             .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning)
             .Enrich.FromLogContext()
-            .WriteTo.Console(formatter: new ExpressionTemplate(LoggerFormat))
+            .WriteTo.Debug(formatter: new ExpressionTemplate(LoggerFormat))
             .WriteTo.Console(formatter: new ExpressionTemplate(LoggerFormat))
             .WriteTo.File(
                 path: appPaths.LatestLogFile,
