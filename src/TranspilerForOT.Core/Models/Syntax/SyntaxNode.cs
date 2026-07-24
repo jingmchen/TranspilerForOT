@@ -6,6 +6,7 @@ namespace TranspilerForOT.Core.Models.Syntax;
 
 public abstract class SyntaxNode
 {
+    // Empty capture map for nodes
     public static readonly IReadOnlyDictionary<string, string> NoCaptures =
         new Dictionary<string, string>();
     

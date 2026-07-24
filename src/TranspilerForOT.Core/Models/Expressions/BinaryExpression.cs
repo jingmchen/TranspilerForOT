@@ -1,3 +1,5 @@
+// Copyright (c) Tan Jing Ming. Use of this software is governed by LICENSE.md.
+
 using TranspilerForOT.Core.Data;
 
 namespace TranspilerForOT.Core.Models.Expressions;
